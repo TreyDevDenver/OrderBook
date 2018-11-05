@@ -6,5 +6,9 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "npm install --prefix frontend && npm build --prefix frontend && npm install --prefix backend"
+  },
+  "dependencies": {
+    "ts-node": "^6.0.0",
+    "typescript": "^2.8.1"
   }
 }
