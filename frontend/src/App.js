@@ -16,7 +16,7 @@ class App extends Component {
   }
   componentDidMount() {
     axios
-      .get('http://localhost:3001/orderbook')
+      .get('/orderbook')
       .then(response => {
         const data = response.data;
         if (data.retrieved) {
