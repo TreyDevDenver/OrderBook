@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "webpack": "webpack --config webpack.config.js",
-    "postinstall": "npm install --prefix frontend && npm build --prefix frontend"
+    "postinstall": "npm install --prefix frontend && npm build --prefix frontend && npm prestart:prod"
   },
   "dependencies": {
     "@nestjs/common": "^5.1.0",
