@@ -7,9 +7,9 @@ import {
   CombinedOrderBook, 
   OrderBook, 
 } from './orderbook';
-import { BitfinexService } from 'services/bitfinex.service';
-import { BittrexService } from 'services/bittrex.service';
-import { PoloniexService } from 'services/poloniex.service';
+import { BitfinexService } from '../services/bitfinex.service';
+import { BittrexService } from '../services/bittrex.service';
+import { PoloniexService } from '../services/poloniex.service';
 import { Market } from './orderbook.enums';;
 
 @Controller('orderbook')
@@ -32,7 +32,7 @@ export class OrderbookController {
   async index(): Promise<CombinedOrderBook> {
     const market = Market.BTC_ETH;
     return Promise.all([
-      this.bitfinexService.getOrderBook(),
+      //this.bitfinexService.getOrderBook(),
       this.bittrexService.getOrderBook(),
       this.poloniexService.getOrderBook(),
     ])

@@ -6,7 +6,7 @@ import { OrderBook } from 'orderbook/orderbook';
 import { 
   Exchange, 
   Market, 
-} from 'orderbook/orderbook.enums';
+} from '../orderbook/orderbook.enums';
 
 @Injectable()
 export class BitfinexService {
