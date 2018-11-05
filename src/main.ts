@@ -9,6 +9,7 @@ async function bootstrap() {
   app.setViewEngine('hbs');
   app.enableCors();
   const port = process.env.PORT || 3001;
+  console.log(`Starting app on port ${port}.`);
   await app.listen(port);
 }
 bootstrap();
