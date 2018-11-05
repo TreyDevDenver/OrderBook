@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.useStaticAssets(join(__dirname, '..', '..', 'frontend', 'build'));
+  app.useStaticAssets(join(__dirname, '..', 'frontend', 'build'));
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('hbs');
   app.enableCors();
