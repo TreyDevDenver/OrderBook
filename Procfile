@@ -1,1 +1,1 @@
-web: npm start --prefix ./backend
+web: npm i --prefix ./frontend && npm build --prefix ./frontend && npm start
