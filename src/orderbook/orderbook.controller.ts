@@ -32,7 +32,7 @@ export class OrderbookController {
   async index(): Promise<CombinedOrderBook> {
     const market = Market.BTC_ETH;
     return Promise.all([
-      //this.bitfinexService.getOrderBook(),
+      this.bitfinexService.getOrderBook(),
       this.bittrexService.getOrderBook(),
       this.poloniexService.getOrderBook(),
     ])
