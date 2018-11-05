@@ -9,7 +9,6 @@
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "nodemon",
     "start:debug": "nodemon --config nodemon-debug.json",
-    "prestart:prod": "rimraf dist && tsc",
     "start:prod": "node dist/main.js",
     "start:hmr": "node dist/server",
     "lint": "tslint -p tsconfig.json -c tslint.json",
@@ -18,7 +17,7 @@
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "webpack": "webpack --config webpack.config.js",
-    "postinstall": "npm install --prefix frontend && npm build --prefix frontend && npm run prestart:prod"
+    "postinstall": "npm install --prefix frontend && npm build --prefix frontend && rimraf dist && tsc"
   },
   "dependencies": {
     "@nestjs/common": "^5.1.0",
