@@ -1,0 +1,7 @@
+{
+  "name": "orderbook",
+  "version": "0.0.1",
+  "description": "Display combined order book from several crypto exchanges.",
+  "author": "Trey Metrailer",
+  "license": "MIT"
+}
