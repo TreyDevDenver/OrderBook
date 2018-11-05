@@ -7,9 +7,9 @@ import {
   CombinedOrderBook, 
   OrderBook, 
 } from './orderbook';
-import { BitfinexService } from 'services/bitfinex.service';
-import { BittrexService } from 'services/bittrex.service';
-import { PoloniexService } from 'services/poloniex.service';
+import { BitfinexService } from '../services/bitfinex.service';
+import { BittrexService } from '../services/bittrex.service';
+import { PoloniexService } from '../services/poloniex.service';
 import { Market } from './orderbook.enums';;
 
 @Controller('orderbook')
