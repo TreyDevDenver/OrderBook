@@ -1,9 +1,13 @@
 {
   "name": "orderbook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Display combined order book from several crypto exchanges.",
   "author": "Trey Metrailer",
   "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/TreyDevDenver/OrderBook.git"
+  },
   "scripts": {
     "format": "prettier --write \"src/**/*.ts\"",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
